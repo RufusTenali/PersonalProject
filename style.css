@@ -1,54 +1,103 @@
 body {
   display: block;
-  overflow-x: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
+  background-color: #fcbcb2;
+  padding-bottom: 15px;
+  font: SF-UI-Display-Regular1;
+}
+
+.img-responsive {
+  height: auto;
+  width: auto;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 nav {
-  background-color: #f3f3f3;
-  border-width: 2px;
+  background-color: white;
+  width: auto;
+  height: auto;
 }
 
-.navbar-brand img {
-  max-height: 50px;
-  border-radius: 2px;
+.navbar-brand #logo {
+  height: auto;
+  max-height: 60px;
 }
 
 .navbar-brand {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 900;
+  color: #9e73a1;
 }
 
 .nav-link {
-  color: #5b2da7;
+  color: #fcbcb2;
   font-size: 22px;
-  margin: auto 10px;
+  margin: auto;
 }
 
 .nav-link:hover {
-  color: #283747;
+  color: #dda4ad;
 }
 
-.card {
+.nav-link:hover::after {
+  color: #dda4ad;
+}
+
+.navbar-brand:hover {
+  color: #9e73a1;
+}
+
+#about .block {
   position: relative;
-  top: 150px;
-  left: 50px;
+  background-color: #fcbcb2;
+  border-width: 10px;
+  border-color: black;
+  height: auto;
+  width: auto;
+  margin: auto;
+  padding: 100px;
+  max-height: 500px;
+  max-width: 500px;
+  display: flex;
+  align-self: auto;
 }
 
-.card-body {
-  background-color: #f3f3f3;
+#aboutBlock {
+  position: absolute;
+  z-index: 1;
+  top: 250px;
+  left: 220px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
-.card-title {
-  color: #5b2da7;
+#aboutImage {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
-#subtitle {
-  font-size: 18px;
+/* #cv .card {
+  position: absolute;
+  z-index: 1;
+  top: 530px;
+  left: 200px;
 }
 
-#testImage {
-  position: relative;
-  left: 890px;
-  top: -190px;
+#languages .lanlist {
+  max-height: 120px;
+  max-width: 200px;
 }
+
+#languages li {
+  display: inline-block;
+  /* list-style-type: square; */
+/* padding-right: 12px;
+} */
