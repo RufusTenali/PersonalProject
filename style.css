@@ -57,8 +57,6 @@ nav {
 #about .block {
   position: relative;
   background-color: #fcbcb2;
-  border-width: 10px;
-  border-color: black;
   height: auto;
   width: auto;
   margin: auto;
@@ -67,6 +65,7 @@ nav {
   max-width: 500px;
   display: flex;
   align-self: auto;
+  top: 20px;
 }
 
 #aboutBlock {
@@ -76,28 +75,71 @@ nav {
   left: 220px;
   max-width: 300px;
   max-height: 300px;
+  border-style: solid;
 }
 
 #aboutImage {
   position: absolute;
   top: 20px;
   left: 20px;
+  border-style: solid;
 }
 
-/* #cv .card {
-  position: absolute;
-  z-index: 1;
-  top: 530px;
-  left: 200px;
-}
-
-#languages .lanlist {
+.footer-basic {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
   max-height: 120px;
-  max-width: 200px;
+  padding: 15px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+  opacity: 75%;
 }
 
-#languages li {
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   display: inline-block;
-  /* list-style-type: square; */
-/* padding-right: 12px;
-} */
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
