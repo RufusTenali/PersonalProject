@@ -197,6 +197,7 @@ nav {
   border: solid white;
   perspective: 1000px;
   display: inline-block;
+  font-size: 75px;
 }
 
 .flip-box-inner {
